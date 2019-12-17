@@ -22,7 +22,6 @@ namespace IntroCompetitiveProgrammingCodes.Day_01
             }
 
             Console.ReadKey();
-
         }
     }
 }
