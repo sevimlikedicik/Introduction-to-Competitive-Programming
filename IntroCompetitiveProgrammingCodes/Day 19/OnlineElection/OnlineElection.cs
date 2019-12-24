@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace IntroCompetitiveProgrammingCodes.Day_19
+namespace IntroCompetitiveProgrammingCodes.Day_19.OnlineElection
 {
     class OnlineElection
     {

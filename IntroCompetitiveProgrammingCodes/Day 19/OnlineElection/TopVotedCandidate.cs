@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace IntroCompetitiveProgrammingCodes.Day_19
+﻿namespace IntroCompetitiveProgrammingCodes.Day_19.OnlineElection
 {
     public class TopVotedCandidate
     {

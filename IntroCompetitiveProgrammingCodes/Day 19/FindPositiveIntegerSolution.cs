@@ -2,11 +2,11 @@
 
 namespace IntroCompetitiveProgrammingCodes.Day_19
 {
-    class FindPositiveIntegerSolution
+    public class FindPositiveIntegerSolution
     {
         public class CustomFunction
         {
-            int f(int a, int b)
+            public int f(int a, int b)
             {
                 return 0;
             }
