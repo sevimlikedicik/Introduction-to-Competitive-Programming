@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
-    <StartupObject>IntroCompetitiveProgrammingCodes.Day_02.MultiplyBigNumbers</StartupObject>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <StartupObject>IntroCompetitiveProgrammingCodes.Day_14.RangeSumOfBST</StartupObject>
   </PropertyGroup>
 
 </Project>
