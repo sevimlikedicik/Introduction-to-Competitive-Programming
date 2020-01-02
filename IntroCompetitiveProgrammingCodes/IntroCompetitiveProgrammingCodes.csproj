@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <StartupObject>IntroCompetitiveProgrammingCodes.Day_14.RangeSumOfBST</StartupObject>
+    <StartupObject>IntroCompetitiveProgrammingCodes.Day_22.FractionToRecurringDecimal</StartupObject>
   </PropertyGroup>
 
 </Project>
