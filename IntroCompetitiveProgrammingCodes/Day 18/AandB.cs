@@ -18,21 +18,23 @@ namespace IntroCompetitiveProgrammingCodes.Day_18
                 int dif = Math.Abs(a - b);
 
                 Console.WriteLine(Solve(dif));
+
+                Console.ReadKey();
             }
         }
 
-        private static int Solve(int dif)
+        private static int Solve(int diff)
         {
-            int res = (int)Math.Sqrt(dif);
-            long total = ((res + 1) * res) / 2;
+            int n = 0;
+            long total = ((n + 1) * n) / 2;
 
-            while (total < dif || total % 2 != dif % 2)
+            while (total < diff || total % 2 != diff % 2)
             {
-                res++;
-                total = ((res + 1) * res) / 2;
+                n++;
+                total = ((n + 1) * n) / 2;
             }
 
-            return res;
+            return n;
         }
 
         private static string ReadLine() => Console.ReadLine();
