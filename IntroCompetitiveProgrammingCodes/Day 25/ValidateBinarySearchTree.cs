@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+
 using IntroCompetitiveProgrammingCodes.Day_14;
 
 namespace IntroCompetitiveProgrammingCodes.Day_25
@@ -25,27 +24,10 @@ namespace IntroCompetitiveProgrammingCodes.Day_25
             Console.ReadKey();
         }
 
-        public static bool IsValidBST(TreeNode root)
-        {
-            if (root == null)
-                return true;
+        public static bool IsValidBST(TreeNode root) => IsValid(root, long.MinValue, long.MaxValue);
 
-            return IsValid(root, long.MinValue, long.MaxValue);
-        }
-
-        private static bool IsValid(TreeNode node, long min, long max)
-        {
-            if (node.val <= min || node.val >= max)
-                return false;
-
-            if (node.left == null && node.right == null)
-                return true;
-            else if (node.left == null)
-                return node.right.val > node.val && IsValid(node.right, node.val, max);
-            else if (node.right == null)
-                return node.left.val < node.val && IsValid(node.left, min, node.val);
-            else
-                return node.left.val < node.val && node.right.val > node.val && IsValid(node.left, min, node.val) && IsValid(node.right, node.val, max);
-        }
+        private static bool IsValid(TreeNode node, long min, long max) => node == null
+               || ((node.val > min && node.val < max)
+               && IsValid(node.left, min, node.val) && IsValid(node.right, node.val, max));
     }
 }
