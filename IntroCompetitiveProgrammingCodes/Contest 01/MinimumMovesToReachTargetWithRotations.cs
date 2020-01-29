@@ -19,7 +19,16 @@ namespace IntroCompetitiveProgrammingCodes.Contest_01
             }
         }
 
-        public int MinimumMoves(int[][] grid)
+        static void Main(string[] args)
+        {
+            int[][] mtr = new int[][] { new int[] { 0, 0, 0 }, new int[] { 0, 1, 1 } };
+
+            Console.WriteLine(MinimumMoves(mtr));
+
+            Console.ReadKey();
+        }
+
+        public static int MinimumMoves(int[][] grid)
         {
             // 0 is unvisited, 1 is visited horizontally, 2 vertically, 3 both.
             int[,] visited = new int[grid.Length, grid[0].Length];
@@ -60,7 +69,7 @@ namespace IntroCompetitiveProgrammingCodes.Contest_01
             return shortestPathHorizontal[grid.Length - 1, grid.Length - 1];
         }
 
-        private void MoveHorizontal(int[][] grid, Queue<SnakeCoordinate> queue, SnakeCoordinate coord, int[,] shortestPathHorizontal, int[,] shortestPathVertical, int[,] visited)
+        private static void MoveHorizontal(int[][] grid, Queue<SnakeCoordinate> queue, SnakeCoordinate coord, int[,] shortestPathHorizontal, int[,] shortestPathVertical, int[,] visited)
         {
             // Move right
             int nxHead = coord.I;
@@ -120,7 +129,7 @@ namespace IntroCompetitiveProgrammingCodes.Contest_01
             }
         }
 
-        private void MoveVertical(int[][] grid, Queue<SnakeCoordinate> queue, SnakeCoordinate coord, int[,] shortestPathHorizontal, int[,] shortestPathVertical, int[,] visited)
+        private static void MoveVertical(int[][] grid, Queue<SnakeCoordinate> queue, SnakeCoordinate coord, int[,] shortestPathHorizontal, int[,] shortestPathVertical, int[,] visited)
         {
             // Move right
             int nxHead = coord.I;
