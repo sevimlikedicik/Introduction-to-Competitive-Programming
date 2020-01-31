@@ -60,9 +60,6 @@ namespace IntroCompetitiveProgrammingCodes.Contest_01
                     MoveVertical(grid, queue, coord, shortestPathHorizontal, shortestPathVertical, visited);
             }
 
-            Console.WriteLine(shortestPathHorizontal[grid.Length - 1, grid.Length - 1]);
-            Console.WriteLine(shortestPathVertical[grid.Length - 1, grid.Length - 1]);
-
             if (shortestPathHorizontal[grid.Length - 1, grid.Length - 1] == int.MaxValue)
                 return -1;
 
