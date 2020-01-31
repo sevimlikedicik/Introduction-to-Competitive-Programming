@@ -26,20 +26,24 @@ namespace IntroCompetitiveProgrammingCodes.Contest_03
 
         private static int FindMax(int[] arr1, int[] arr2, bool onePositive, bool twoPositive)
         {
-            string iSideExpression = "-";
-            string jSideExpression = "+";
-            iSideExpression += onePositive ? "+" : "-";
-            jSideExpression += onePositive ? "-" : "+";
-            iSideExpression += twoPositive ? "+" : "-";
-            jSideExpression += twoPositive ? "-" : "+";
+            // true is '+', false is '-'.
+            bool[] iSideOperators = new bool[3];
+            bool[] jSideOperators = new bool[3];
+
+            iSideOperators[0] = false;
+            jSideOperators[0] = true;
+            iSideOperators[1] = onePositive;
+            jSideOperators[1] = !onePositive;
+            iSideOperators[2] = twoPositive;
+            jSideOperators[2] = !twoPositive;
 
             int maxISide = int.MinValue;
             int maxJSide = int.MinValue;
 
             for (int k = 0; k < arr1.Length; k++)
             {
-                int iSide = Calculate(arr1, arr2, k, iSideExpression);
-                int jSide = Calculate(arr1, arr2, k, jSideExpression);
+                int iSide = Calculate(arr1, arr2, k, iSideOperators);
+                int jSide = Calculate(arr1, arr2, k, jSideOperators);
 
                 maxISide = iSide > maxISide ? iSide : maxISide;
                 maxJSide = jSide > maxJSide ? jSide : maxJSide;
@@ -48,11 +52,11 @@ namespace IntroCompetitiveProgrammingCodes.Contest_03
             return maxISide + maxJSide;
         }
 
-        private static int Calculate(int[] arr1, int[] arr2, int index, string expression)
+        private static int Calculate(int[] arr1, int[] arr2, int index, bool[] operators)
         {
-            int sum = expression[0] == '+' ? index : -index;
-            sum += expression[1] == '+' ? arr1[index] : -arr1[index];
-            sum += expression[2] == '+' ? arr2[index] : -arr2[index];
+            int sum = operators[0] ? index : -index;
+            sum += operators[1] ? arr1[index] : -arr1[index];
+            sum += operators[2] ? arr2[index] : -arr2[index];
 
             return sum;
         }
