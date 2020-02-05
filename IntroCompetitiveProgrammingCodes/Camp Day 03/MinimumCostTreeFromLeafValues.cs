@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace IntroCompetitiveProgrammingCodes.Camp_Day_3
+namespace IntroCompetitiveProgrammingCodes.Camp_Day_03
 {
     class MinimumCostTreeFromLeafValues
     {

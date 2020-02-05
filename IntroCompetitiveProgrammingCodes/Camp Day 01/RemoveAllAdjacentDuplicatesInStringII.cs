@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace IntroCompetitiveProgrammingCodes.Camp_Day_1
+namespace IntroCompetitiveProgrammingCodes.Camp_Day_01
 {
     class RemoveAllAdjacentDuplicatesInStringII
     {

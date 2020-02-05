@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace IntroCompetitiveProgrammingCodes.Camp_Day_5
+namespace IntroCompetitiveProgrammingCodes.Camp_Day_05
 {
     class MaximumSubarray
     {

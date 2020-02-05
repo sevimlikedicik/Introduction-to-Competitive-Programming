@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace IntroCompetitiveProgrammingCodes.Camp_Day_1
+namespace IntroCompetitiveProgrammingCodes.Camp_Day_01
 {
     class MinimumMovesToReachTargetWithRotations
     {

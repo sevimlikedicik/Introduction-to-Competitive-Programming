@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace IntroCompetitiveProgrammingCodes.Camp_Day_3
+namespace IntroCompetitiveProgrammingCodes.Camp_Day_03
 {
     class NumberOfEquivalentDominoPairs
     {

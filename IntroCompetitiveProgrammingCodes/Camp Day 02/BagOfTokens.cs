@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace IntroCompetitiveProgrammingCodes.Camp_Day_2
+namespace IntroCompetitiveProgrammingCodes.Camp_Day_02
 {
     class BagOfTokens
     {
