@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Linq;
-using System.Text;
 
-namespace IntroCompetitiveProgrammingCodes.Contest_04
+namespace IntroCompetitiveProgrammingCodes.Camp_Day_4
 {
     class OrderlyQueue
     {

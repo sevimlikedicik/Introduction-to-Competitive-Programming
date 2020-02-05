@@ -1,36 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace IntroCompetitiveProgrammingCodes.Contest_02
+namespace IntroCompetitiveProgrammingCodes.Camp_Day_2
 {
     class MostStonesRemovedWithSameRowOrColumn
     {
-        //internal class Coordinate
-        //{
-        //    public int I;
-        //    public int J;
-
-        //    public Coordinate(int i, int j)
-        //    {
-        //        I = i;
-        //        J = j;
-        //    }
-
-        //    public override int GetHashCode()
-        //    {
-        //        return I.GetHashCode() + J.GetHashCode();
-        //    }
-
-        //    public override bool Equals(object obj)
-        //    {
-        //        if (obj == null || GetType() != obj.GetType())
-        //            return false;
-
-        //        var other = (Coordinate)obj;
-        //        return (I == other.I && J == other.J);
-        //    }
-        //}
-
         static void Main(string[] args)
         {
             int[][] mtr = new int[][] { new int[] { 3, 2 }, new int[] { 3, 1 }, new int[] { 4, 4 }, new int[] { 1, 1 }, new int[] { 0, 2 }, new int[] { 4, 0 } };

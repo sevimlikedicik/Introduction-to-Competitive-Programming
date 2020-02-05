@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace IntroCompetitiveProgrammingCodes.Contest_04
+namespace IntroCompetitiveProgrammingCodes.Camp_Day_4
 {
     class MonotonicArray
     {

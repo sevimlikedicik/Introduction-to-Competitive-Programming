@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace IntroCompetitiveProgrammingCodes.Contest_02
+namespace IntroCompetitiveProgrammingCodes.Camp_Day_2
 {
     class ValidateStackSequences
     {

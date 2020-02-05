@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace IntroCompetitiveProgrammingCodes.Contest_03
+namespace IntroCompetitiveProgrammingCodes.Camp_Day_3
 {
     class ShortestPathWithAlternatingColors
     {

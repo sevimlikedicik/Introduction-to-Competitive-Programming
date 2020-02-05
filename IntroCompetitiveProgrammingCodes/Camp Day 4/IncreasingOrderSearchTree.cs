@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+
 using IntroCompetitiveProgrammingCodes.Day_14;
 
-namespace IntroCompetitiveProgrammingCodes.Contest_04
+namespace IntroCompetitiveProgrammingCodes.Camp_Day_4
 {
     class IncreasingOrderSearchTree
     {
