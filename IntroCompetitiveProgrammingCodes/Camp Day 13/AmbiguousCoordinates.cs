@@ -11,7 +11,7 @@ namespace IntroCompetitiveProgrammingCodes.Camp_Day_13
             string paragraph = "a,b,c  ?c?c?a";
             string[] banned = new string[1] { "a" };
 
-            Console.WriteLine(FindAmbiguousCoordinates(paragraph, banned));
+            Console.WriteLine(FindAmbiguousCoordinates(paragraph));
 
             Console.ReadKey();
         }
